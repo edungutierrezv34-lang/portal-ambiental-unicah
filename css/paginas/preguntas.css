@@ -1,0 +1,221 @@
+/* ============================================
+   PAGINA: Preguntas Frecuentes (pagina-09-preguntas.html)
+   ============================================ */
+
+
+
+
+
+
+
+/* ============ RECUPERADO DE origin/pagina-10-preguntas ============ */
+
+/* Dueño: Byron */
+.faq__page .header-sitio {
+  position: relative;
+  background: var(--vida-verde-oscuro);
+}
+
+
+.faq__page .header-sitio__badge {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+
+/* Dueño: Byron */
+.faq-content{
+  position: relative;
+  max-width: 780px;
+  margin: 5rem auto;
+  padding: 0 40px;
+}
+
+
+/* Dueño: Byron */
+.faq-content h1{
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: var(--vida-fuente-titulo);
+  font-weight: 700;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  color: var(--vida-verde-oscuro);
+}
+
+
+/* Dueño: Byron */
+.faq-section{
+  width: 100%;
+  justify-content: center;
+}
+
+
+/* Dueño: Byron */
+.faq-question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  font-family: var(--vida-fuente-texto);
+  font-size: 1.1rem;
+  color: var(--vida-verde-oscuro);
+  font-weight: 700;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--vida-tarjeta-borde);
+  cursor: pointer;
+}
+
+
+/* Dueño: Byron */
+.faq-question span{
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--vida-dorado);
+}
+
+
+/* Dueño: Byron */
+.faq-answer{
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    padding 0.3s ease;
+  padding: 0
+}
+
+
+/* Dueño: Byron */
+.faq-answer p {
+  font-family: var(--vida-fuente-texto);
+  color: var(--vida-texto-muted);
+  line-height: 1.6;
+}
+
+
+/* Dueño: Byron */
+.faq-answer.active{
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  padding: 0.5rem 0 1.5rem;
+}
+
+
+/* Dueño: Byron */
+.faq-contact{
+  background: var(--vida-verde-oscuro);
+  text-align: center;
+  padding: 5rem 40px;
+}
+
+
+/* Dueño: Byron */
+.faq-contact h2{
+  margin-bottom: 2rem;
+  font-family: var(--vida-fuente-titulo);
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #fff;
+}
+
+
+/* Dueño: Byron */
+.faq-button{
+  display: inline-block;
+  font-family: var(--vida-fuente-texto);
+  padding: 1rem 2.5rem;
+  background-color: var(--vida-dorado);
+  color: #1a1a1a;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+
+/* Dueño: Byron */
+.faq-button:hover {
+  background-color: var(--vida-dorado-hover);
+}
+
+
+/* Enredadera decorativa (misma pieza que Vida Estudiantil / Sobre la Carrera) */
+.faq__enredaderas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+
+@media (max-width: 900px) {
+  .faq__enredaderas {
+    display: none;
+  }
+}
+
+
+/* Animacion de entrada de cada pregunta */
+.faq__revelar {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
+.faq__revelar--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .faq__revelar {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 767px) {
+  .faq__page .header-sitio {
+    padding: 16px 20px;
+  }
+
+  .faq-content {
+    padding: 0 24px;
+    margin: 3rem auto;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-contact {
+    padding: 3.5rem 24px;
+  }
+
+  .faq-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+

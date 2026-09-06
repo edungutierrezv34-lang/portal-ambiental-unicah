@@ -1,0 +1,14 @@
+# Configuracion local de Claude Code (permisos por maquina, no se comparte)
+.claude/settings.local.json
+
+# Cache local de herramientas de IA de otras personas (autogenerado, por usuario)
+.atl/
+
+# Basura tipica de sistema operativo
+Thumbs.db
+.DS_Store
+
+# Configuracion local de editor (si alguien la usa a nivel de usuario, no de equipo)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

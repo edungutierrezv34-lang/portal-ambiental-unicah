@@ -1,0 +1,176 @@
+/* ============================================
+   PAGINA: Galeria (pagina-05-galeria.html)
+   ============================================ */
+
+/* ============ PAGINA 06 - GALERIA (version 6478379) ============ */
+
+
+/* ============================================
+   PÁGINA 06 - GALERÍA ESTILO PINTEREST (masonry puro)
+   ============================================ */
+
+.galeria__header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #1a1206;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  border-bottom: 1px solid #2e2013;
+  width: 100%;
+}
+
+
+
+.galeria__logo-texto {
+  font-family: 'PT Serif', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #f4f1ea;
+}
+
+
+
+.galeria__header .inicio__menu-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+
+
+.galeria__header .inicio__menu-btn span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #f4f1ea;
+}
+
+
+
+/* Masonry real: cada foto usa su ancho de columna y su alto natural */
+.galeria__grid {
+  column-count: 4;
+  column-gap: 8px;
+  width: 100%;
+  padding: 8px;
+  background-color: #1a1206;
+}
+
+
+
+.galeria__item {
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+  break-inside: avoid;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+
+
+.galeria__item:hover {
+  filter: brightness(0.85);
+}
+
+
+
+/* Lightbox (Visor de pantalla completa) */
+.galeria__lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.galeria__lightbox--abierto {
+  display: flex;
+}
+
+
+
+.galeria__lightbox-imagen {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+}
+
+
+
+.galeria__lightbox-cerrar {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+
+
+.galeria__lightbox-flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 20px;
+}
+
+
+
+.galeria__lightbox-flecha--izq { left: 20px; }
+
+
+.galeria__lightbox-flecha--der { right: 20px; }
+
+
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 900px) {
+
+
+  .galeria__grid {
+    column-count: 3;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+
+
+  .galeria__grid {
+    column-count: 2;
+  }
+}
+
+
+
+@media (max-width: 400px) {
+
+
+  .galeria__grid {
+    column-count: 1;
+  }
+}
+

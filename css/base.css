@@ -1,0 +1,59 @@
+/* ============================================
+   BASE — reset, variables globales (:root) y tipografia por defecto
+   ============================================ */
+
+    /* ============================================
+   VARIABLES Y ESTILOS BASE 
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'PT Serif', serif;
+}
+
+
+
+
+
+body {
+  background: #f5f5f5;
+}
+  :root {
+    --vida-verde-oscuro: #1a2e1a;
+    --vida-verde-oscuro-2: #24391f;
+    --vida-verde-oscuro-3: #2e4a2e;
+    --vida-fondo-alterno: #e8ede3;
+    --vida-dorado: #c98a4b;
+    --vida-dorado-hover: #b5793e;
+    --vida-dorado-texto: #8d6135;
+    --vida-resaltado: #8bc34a;
+    --vida-tarjeta-fondo: #f4f1ea;
+    --vida-tarjeta-borde: #d5dccb;
+    --vida-texto-oscuro: #3a3a3a;
+    --vida-texto-muted: #5c6355;
+    --vida-fuente-texto: 'PT Serif', serif;
+    --vida-fuente-titulo: 'Tangerine', cursive;
+
+    --carrera-verde-oscuro: var(--vida-verde-oscuro);
+    --carrera-verde-oscuro-3: var(--vida-verde-oscuro-3);
+    --carrera-fondo-alterno: var(--vida-fondo-alterno);
+    --carrera-dorado: var(--vida-dorado);
+    --carrera-dorado-hover: var(--vida-dorado-hover);
+    --carrera-tarjeta-fondo: var(--vida-tarjeta-fondo);
+    --carrera-tarjeta-borde: var(--vida-tarjeta-borde);
+    --carrera-texto-oscuro: var(--vida-texto-oscuro);
+    --carrera-texto-muted: var(--vida-texto-muted);
+    --carrera-fuente-texto: var(--vida-fuente-texto);
+    --carrera-fuente-titulo: var(--vida-fuente-titulo);
+  }
