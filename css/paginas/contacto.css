@@ -569,8 +569,8 @@
   width: 26px;
   height: 26px;
   background-color: #e9efe3;
-  -webkit-mask-image: url("../../media/logo-unicah.svg");
-  mask-image: url("../../media/logo-unicah.svg");
+  -webkit-mask-image: url("../../img/compartido/logo-unicah.svg");
+  mask-image: url("../../img/compartido/logo-unicah.svg");
   -webkit-mask-size: contain;
   mask-size: contain;
   -webkit-mask-repeat: no-repeat;
