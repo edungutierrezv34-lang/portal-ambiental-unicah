@@ -1,7 +1,7 @@
-# Configuracion local de Claude Code (permisos por maquina, no se comparte)
+# Configuracion local del editor (por maquina, no se comparte)
 .claude/settings.local.json
 
-# Cache local de herramientas de IA de otras personas (autogenerado, por usuario)
+# Cache local autogenerado (por usuario)
 .atl/
 
 # Basura tipica de sistema operativo
